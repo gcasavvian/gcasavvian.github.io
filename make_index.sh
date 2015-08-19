@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ls g*.html > ls.txt
+ls g*_c*_a*.html > ls.txt
 sed -E 's|(.*)|<a href="\1">GCA: \1</a><br/>|g' ls.txt > index.txt
 
 echo "<html><head><title>GCA Savvian</title></head><body>" > index.html
